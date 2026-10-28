@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wangliwesi-exptrack_jd166"
+version = "0.1.0"
+description = "在同一个输入里两两比对，检测实验管理与追踪工程师·投机解码的命中率相关的矛盾表述，把冲突双方原样并排呈现"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "wangliwesi" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://wangliwesi.github.io"
+Repository = "https://github.com/wangliwesi/exptrack_jd166"
+Issues = "https://github.com/wangliwesi/exptrack_jd166/issues"
+
+[project.scripts]
+exptrack_jd166 = "exptrack_jd166:main"
+
+[tool.setuptools]
+py-modules = ["exptrack_jd166"]
